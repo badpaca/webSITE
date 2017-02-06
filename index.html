@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+    <head>
+    
+    <!-- PAGE ONE -->
+    
+        <!-- TITLE -->
+        <title> badpaca </title>
+    
+        <!-- FAVICON -->
+        <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAD               /AAAAAAAAAAAAAAAAAB/gAAA/0AAAADAAAH+wAAB/sAAAf7AAAH+wAAB/sAAAf7AAAH+wAAB/sAAAf6AAAAAAAAD//wAA//8AAOAHAADABwAAgAcAAAAHAAAABwAAAAcAAAAHAA         AABwAAAAcAAAAHAAAABwAAAAcAAAAPAAAAHwAA" rel="icon" type="image/x-icon" />
+        
+        
+    
+        <style>
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                overflow-x: hidden;
+              
+                }
+                
+                  
+            #container {
+               
+               display: flex;
+               min-height: 100%;
+            }      
+           
+           input[type=checkbox] {
+               position: absolute;
+               opacity: 0;
+            }
+            label {
+               position: absolute;
+               top: -4vmin;
+               left: 4vmin;
+               z-index: 40;
+               display: block;
+               font-size:3em;
+               color: black;
+               cursor: pointer;
+               transform: translate3d(0, 0, 0);
+               transition: transform .4s;
+            }
+            input[type=checkbox]:checked ~ label {
+               transform: translate3d(40vmin, 0, 0) rotate(180deg);
+            }
+            .content {
+               width:100%;
+               background-image:url("https://drive.google.com/uc?id=0BxkZ178rBWjtQy1JWG1SWVBoaVk");
+               transform: translate3d(0, 0, 0);
+               
+               transition: transform .4s;
+               z-index:20;
+            
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+            input[type=checkbox]:checked ~ .content {
+               transform: translate3d(40vmin, 0, 0);
+            }
+            input[type=checkbox]:checked ~ .slide-menu {
+               transform: translate3d(0, 0, 0);
+            }
+            input[type=checkbox]:checked ~ .slide-menu .menu li {
+               width: 100%;
+            }
+            .slide-menu {
+              
+               position: absolute;
+               width: 40vmin;
+               background: hotpink;
+               color: black;
+            left:0;
+            transform: translate3d(-40vmin, 0, 0);
+               height: 100%;
+               transition: all .4s;
+               z-index: 1;
+            }
+            .slide-menu h1 {
+               margin: 10px;
+            }
+            .menu {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+            }
+            .menu a {
+               display: block;
+               text-decoration: none;
+               color: black;
+               font-size: 7vmin;
+               background: hotpink;
+               
+               font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            }
+            .menu a:hover {
+               background: black;
+            
+            }
+            #logothing{
+                background:none;
+                
+                z-index:30;
+                margin-left: 4vmin;
+                margin-top: 92vh;
+            }
+
+            
+            
+            
+        </style>
+    </head>
+    <body>
+    
+    
+    <div id="container">
+      <input id="toggle" type="checkbox"><label for="toggle" style="font-size:40vmin;color:#F0EAD6;opacity:0.7;"><b>&equiv;</b></label>
+      
+      <div class="content"> 
+      <div id="logothing" style="width:15vmin;height:8vmin;opacity:0.7;"><img src="https://drive.google.com/uc?id=0BxkZ178rBWjtaXU4THp0TllRX2c" style="width:15vmin;"></div>
+      
+      
+      </div> 
+      
+      <div class="slide-menu">
+        <nav class="menu">
+        <br> <br>
+          <a href="http://www.badpaca.tumblr.com">&nbsp <b> <strike> home</strike></b></a> <br>
+          <a href="http://www.badpaca.tumblr.com/fifteen"> &nbsp <b><strike>about</strike></b></a> <br>
+          <a href="http://www.badpaca.tumblr.com/sunomono"> &nbsp <b><strike>projects</strike></b></a> <br>
+          <a href="http://www.badpaca.tumblr.com/xxx" id="logolink">&nbsp <b> <strike> atrium</strike></b></a> <br>
+          
+        </nav>
+      </div>
+    </div>
+
+    
+    
+    </body>
+</html>
